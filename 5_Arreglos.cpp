@@ -9,6 +9,13 @@ int main()
 {
     std::cout << "Ejemplo de Arreglos\n";
 
+    std::cout << "size of a float: " << sizeof(float) << "\n";
+    std::cout << "size of a int: " << sizeof(int) << "\n";
+    std::cout << "size of a char: " << sizeof(char) << "\n";
+    std::cout << "size of a bool: " << sizeof(bool) << "\n";
+    std::cout << "size of a string: " << sizeof(std::string) << "\n";
+    std::cout << "size of a Arreglo: " << sizeof(Arreglo) << "\n";
+    
     //arreglo estático 
 
     int edades[] = { 18, 22, 32, 45, 61, 56, 98 };

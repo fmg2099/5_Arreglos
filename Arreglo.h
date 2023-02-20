@@ -20,13 +20,13 @@ public:
 	//ctor
 	Arreglo(size_t _size)
 	{
-		data = (float*) malloc(_size);   //void*
+		data = (float*) malloc(_size * sizeof(float));   //void*
 		m_count = _size;
 
 		//limpiar la basura
 		//memset necesita el tamano en bytes, entonces 
 		//multiplicar por 4 (un float usa 4 bytes)
-		memset(data, 0, m_count*4);
+		memset(data, 0, m_count * sizeof(float)  );
 		print();
 	}
 
@@ -70,12 +70,13 @@ public:
 	bool SetSize(size_t newSize)
 	{
 		//crear nuevo espacio de memoria
-		void* buffer = malloc(newSize);
+		void* buffer = malloc(newSize * sizeof(float));
 
 		if (buffer != NULL)
 		{
-			memcpy(buffer, data, newSize * 4);
+			memcpy(buffer, data, newSize * sizeof(float));
 
+			free(data);
 			data = (float*) buffer;
 			m_count = newSize;
 			return 1;
