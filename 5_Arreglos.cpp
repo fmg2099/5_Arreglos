@@ -39,6 +39,9 @@ int main()
     Arreglo* myArreglo = new Arreglo(arrsize);
     std::cout << "arreglo size " << myArreglo->count() << "\n";
 
+    myArreglo->setval(0, 1.0);
+    myArreglo->setval(3, 0.999);
+    myArreglo->setval(6, 5.184);
     myArreglo->setval(10, 3.1416);
     myArreglo->setval(12, 2.7182);
     myArreglo->setval(15, 1.618);
@@ -46,6 +49,12 @@ int main()
 
     //imprimir contenido del arreglo
     myArreglo->print();
+
+    puts("cambiando tamaño a 10");
+    //redimensionar a 10
+    myArreglo->SetSize(10);
+    myArreglo->print();
+
 
 
     system("pause");

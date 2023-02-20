@@ -1,6 +1,8 @@
 ﻿  5_Arreglos.cpp
-C:\Users\Alumno\source\repos\5_Arreglos\5_Arreglos\5_Arreglos.cpp(42,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\Alumno\source\repos\5_Arreglos\5_Arreglos\5_Arreglos.cpp(43,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\Alumno\source\repos\5_Arreglos\5_Arreglos\5_Arreglos.cpp(44,32): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Alumno\source\repos\5_Arreglos\5_Arreglos\5_Arreglos.cpp(43,31): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Alumno\source\repos\5_Arreglos\5_Arreglos\5_Arreglos.cpp(44,31): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\Alumno\source\repos\5_Arreglos\5_Arreglos\5_Arreglos.cpp(45,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Alumno\source\repos\5_Arreglos\5_Arreglos\5_Arreglos.cpp(46,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Alumno\source\repos\5_Arreglos\5_Arreglos\5_Arreglos.cpp(47,32): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Alumno\source\repos\5_Arreglos\5_Arreglos\5_Arreglos.cpp(48,33): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   5_Arreglos.vcxproj -> C:\Users\Alumno\source\repos\5_Arreglos\x64\Debug\5_Arreglos.exe

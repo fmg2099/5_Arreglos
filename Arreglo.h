@@ -24,7 +24,10 @@ public:
 		m_count = _size;
 
 		//limpiar la basura
-		memset(data, 0, _size);
+		//memset necesita el tamano en bytes, entonces 
+		//multiplicar por 4 (un float usa 4 bytes)
+		memset(data, 0, m_count*4);
+		print();
 	}
 
 	//setter de posicion en el arreglo
@@ -59,9 +62,31 @@ public:
 		for (int i = 0; i < m_count; i++)
 		{
 			//std::cout << "[" << i << "] = " << getval(i) << "\n";
-			printf("[%i] = %f \n", i, getval(i));
+			printf("[%i] = %E \n", i, getval(i));
 		}
 	}
+
+	//redimensionar arreglo
+	bool SetSize(size_t newSize)
+	{
+		//crear nuevo espacio de memoria
+		void* buffer = malloc(newSize);
+
+		if (buffer != NULL)
+		{
+			memcpy(buffer, data, newSize * 4);
+
+			data = (float*) buffer;
+			m_count = newSize;
+			return 1;
+		}
+		else
+		{
+			std::cout << "ERROR no se puede redimensionar arreglo \n";
+			return 0;
+		}
+	}
+
 
 };
 
